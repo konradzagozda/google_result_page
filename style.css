@@ -1,0 +1,171 @@
+html {
+  min-width: 1000px;
+}
+
+.top div img {
+  margin: 30px;
+  display: inline-block;
+  width: 100px;
+}
+
+.top div img[src="./media/2.png"] {
+  width: auto;
+}
+
+input[type="text"] {
+  display: inline-block;
+  margin: 0;
+  height: 42px;
+  min-width: 500px;
+  border-radius: 19px;
+  font-size: 16px;
+  padding: 0 20px;
+  border: 1px solid #9da2b7;
+}
+
+input[type="text"]:active, input[type="text"]:hover, input[type="text"]:focus {
+  box-shadow: 1px 1px 3px #9da2b7, -1px -1px 3px #9da2b7;
+}
+
+.top div {
+  display: inline-block;
+}
+
+.right {
+  position: relative;
+  float: right;
+  top: 10px;
+  right: 20px;
+}
+
+img[src="./media/2.png"] {
+  opacity: 0.6;
+  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+}
+img[src="./media/2.png"]:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+#user-menu {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #4497A7;
+  border-radius: 25px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+section ul:first-of-type {
+  display: block;
+  border-bottom: 1px solid gray;
+}
+
+section ul:first-of-type li:first-of-type {
+  margin-left: 165px;
+  border-bottom: 2px solid blue;
+}
+
+.last-elem:hover {
+  border: 1px solid black;
+  background-color: gray;
+  padding: 10px;
+}
+
+.last-elem {
+  border: 1px solid transparent;
+}
+
+section ul:first-of-type li {
+  display: inline-block;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+section ul:first-of-type li a {
+  text-decoration: none;
+  color: black;
+}
+
+main > p {
+  padding: 10px;
+  margin-left: 165px;
+  margin-top: 5px;
+}
+
+main > section {
+  margin-left: 165px;
+  padding: 10px;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+main > section > * {
+  padding-top: 4px;
+  padding-bottom: 3px;
+}
+
+main > section > h1 {
+  color: blue;
+  font-size: 1.5em;
+}
+
+main > section > p:first-of-type {
+  color: green;
+}
+
+main > section > p:last-of-type {
+  color: gray;
+}
+
+main > section:first-of-type {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#similar > h1 {
+  color: black;
+}
+
+#similar > ul {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+}
+
+#similar li:first-of-type {
+  margin-left: 0;
+  border-bottom: none;
+}
+
+#similar li {
+  padding: 5px;
+}
+
+#similar a {
+  color: blue;
+}
+
+#similar ul {
+  border: none;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(223,225,229);
+}
+
+footer div {
+  padding: 10px;
+  padding-left: 20px;
+  border-top: 1px solid #E4E4E4;
+}
