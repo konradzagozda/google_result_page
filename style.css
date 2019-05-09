@@ -1,8 +1,10 @@
 html {
   min-width: 1000px;
+  box-sizing: border-box;
+  font-family: "arial", sans-serif;
 }
 
-.top div img {
+#google-logo {
   margin: 30px;
   display: inline-block;
   width: 100px;
@@ -34,8 +36,13 @@ input[type="text"]:active, input[type="text"]:hover, input[type="text"]:focus {
 .right {
   position: relative;
   float: right;
-  top: 10px;
+  top: 16px;
   right: 20px;
+}
+
+.right {
+  padding-top: 10px;
+  padding-right: 5px;
 }
 
 img[src="./media/2.png"] {
@@ -43,6 +50,7 @@ img[src="./media/2.png"] {
   transition: 0.5s;
   position: relative;
   display: inline-block;
+  padding-right: 30px;
 }
 img[src="./media/2.png"]:hover {
   opacity: 0.9;
@@ -51,13 +59,13 @@ img[src="./media/2.png"]:hover {
 
 #user-menu {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   text-align: center;
   background-color: #4497A7;
-  border-radius: 25px;
-  line-height: 50px;
-  font-size: 20px;
+  border-radius: 18px;
+  line-height: 36px;
+  font-size: 16px;
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -96,8 +104,9 @@ section ul:first-of-type li a {
 
 main > p {
   padding: 10px;
-  margin-left: 165px;
-  margin-top: 5px;
+  margin-left: 150px;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
 main > section {
@@ -114,30 +123,40 @@ main > section > * {
 
 main > section > h1 {
   color: blue;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 main > section > p:first-of-type {
   color: green;
+  padding-bottom: 6px;
 }
 
 main > section > p:last-of-type {
   color: gray;
+  font-size: 0.9em;
 }
 
-main > section:first-of-type {
-  border: 1px solid black;
-  border-radius: 5px;
-}
 
 #similar > h1 {
   color: black;
 }
 
+.result > h1 > a {
+  text-decoration: none;
+}
+
+.result > h1 > a:hover {
+  text-decoration: underline;
+}
+
+.result > h1 > a:visited {
+  color: blue;
+}
+
 #similar > ul {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 150px 150px;
+  grid-template-columns: 200px 200px;
 }
 
 #similar li:first-of-type {
@@ -147,6 +166,7 @@ main > section:first-of-type {
 
 #similar li {
   padding: 5px;
+  margin-bottom: 5px;
 }
 
 #similar a {
@@ -158,14 +178,131 @@ main > section:first-of-type {
 }
 
 footer {
+  font-size: 0.9em;
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: rgb(223,225,229);
+  background-color: #efefef;
 }
 
 footer div {
-  padding: 10px;
+  padding: 15px;
   padding-left: 20px;
-  border-top: 1px solid #E4E4E4;
+}
+
+.nums {
+  position: relative;
+  padding-left: 175px;
+}
+
+.nums li {
+  display: inline-block;
+  padding: 3px 0;
+  margin-left: -3px;
+}
+
+.nums li a {
+  text-decoration: none;
+}
+
+.nums li:first-of-type a {
+  color: black;
+  cursor: default;
+}
+
+.nums ul li a, .nums ul li img {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0;
+}
+
+[src="media/G.png"] {
+  position: relative;
+  bottom: 15px;
+}
+
+[src="media/small-g.png"] {
+  position: relative;
+  bottom: 7px;
+}
+
+[src="media/l.png"] {
+  position: relative;
+  bottom: 15px;
+}
+
+[src="media/e.png"] {
+  position: relative;
+  bottom: 15px;
+}
+
+[src="media/move-right.png"] {
+  position: relative;
+  bottom: 6px;
+  left: 12px;
+}
+
+.nums {
+  margin: 50px 0 20px 100px;
+}
+
+
+footer div li {
+  display: inline-block;
+}
+
+footer div {
+  border-top: 1px solid #c6c6c6;
+}
+
+.footer-top-bar li:first-child {
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+
+.footer-top-bar li:nth-child(n+2) {
+  padding-left: 20px;
+}
+
+.footer-top-bar span {
+  font-weight: bold;
+}
+
+.footer-top-bar span:before {
+  content: " ";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background-color: black;
+  border-radius: 10px;
+  z-index: 100;
+  position: relative;
+  top: 1px;
+  right: 5px;
+}
+
+footer div > * {
+  padding-left: 150px;
+}
+
+footer a {
+  color: gray;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: black
+}
+
+.footer-bottom-bar li {
+  padding-right: 30px;
+}
+
+.small-img {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  padding-right: 18px;
+  right: 140px;
 }
